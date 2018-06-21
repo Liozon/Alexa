@@ -1,2 +1,1 @@
-# Alexa
-Projects around Alexa
+# News
