@@ -51,6 +51,10 @@ foreach($array as $key1 => $value1) {
                             $description=strip_tags($value4);
 
                         }
+                        if ($key4=='link'){                
+                            $redirectionUrl=strip_tags($value4);
+
+                        }
                         
                     }
 
@@ -59,7 +63,8 @@ foreach($array as $key1 => $value1) {
                         "uid"=> "urn:uuid:".$i,
                         "updateDate"=> $pubDate,
                         "titleText"=> $title,
-                        "mainText"=> $description
+                        "mainText"=> $description,
+                        "redirectionUrl"=> $redirectionUrl
                     ));
 
 
